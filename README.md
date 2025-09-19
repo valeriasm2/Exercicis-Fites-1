@@ -12,6 +12,6 @@ Proyecto con ejercicios en PHP que muestran tablas con números y letras en HTML
 1. Abrir terminal en la carpeta del proyecto.
 2. Ejecutar:
    ```bash
-   php -S 0.0.0.0:8000
+   php -S 0:8000
    
 
