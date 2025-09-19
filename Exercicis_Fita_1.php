@@ -32,10 +32,9 @@
 <body>
 
 	<h1> FITA 1 :) </h1>
-	<p> alumno : valeria santana </p>
 
 	<?php
-		echo "<br><br>EJERCICIO 1:";
+		echo "EJERCICIO 1:";
 	?>
 
 	<table>
