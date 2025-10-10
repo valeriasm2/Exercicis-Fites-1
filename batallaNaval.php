@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Batalla Naval </title>
+    <title>Batalla Naval</title>
     <style>
         h1 {
             text-align: center;
@@ -23,27 +23,14 @@
             height: 40px;
             text-align: center;
         }
-        .header {
+        .header, .row-label {
             font-weight: bold;
             background: lightblue;
         }
-        .row-label {
-            font-weight: bold;
-            background: lightblue;
-        }
-        .P { 
-            background: darkred; 
-            color: white; 
-        }
-        .D {
-            background: orange;
-        }
-        .S {
-            background: green; 
-        }
-        .F {
-            background: gray; 
-        }
+        .P { background: darkred; color: white; }
+        .D { background: orange; }
+        .S { background: green; }
+        .F { background: gray; }
     </style>
 </head>
 <body>
@@ -64,13 +51,13 @@
         $longitudes = ['P'=>4, 'D'=>3, 'S'=>2, 'F'=>1];
     ?>
 
-    // Tablero
+    <!-- Tablero -->
     <table>
         <tr>
             <td class="header"></td>
             <?php for ($j = 1; $j <= $C; $j++) : ?>
                 <td class="header"><?= $j ?></td>
-            ?>
+            <?php endfor; ?>
         </tr>
 
         <?php for ($i = 0; $i < $F; $i++) : 
@@ -80,9 +67,9 @@
                 <?php for ($j = 0; $j < $C; $j++) : 
                     $clase = $tablero[$i][$j]; ?>
                     <td class="<?= $clase ?>"><?= $clase ? $clase : '' ?></td>
-                ?>
+                <?php endfor; ?>
             </tr>
-        ?>
+        <?php endfor; ?>
     </table>
 
 </body>
